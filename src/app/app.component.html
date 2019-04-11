@@ -1,0 +1,64 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="background-color: #263162;height: 100vh">
+<header class="header" *ngIf="headerText" [@headerText]>
+    <div class="pad header__nav__left"><a  href="/"><img  alt="paketo_image" class="header__img" src="/assets/images/final-light.png"></a></div>
+    <div>
+        <ul>
+            <li>
+                <a (click)="HomeClick()">  Home</a>
+            </li>
+            <li>
+                <a (click)="aboutClick()">About Us</a>
+            </li>
+            <li>
+               <a> Case Study</a>
+            </li>
+            <li>
+               <a> Blog</a>
+            </li>
+            <li>
+                <a>Team</a>
+            </li>
+            <li>
+                <a>Contact</a>
+            </li>
+        </ul>
+    </div>
+</header>
+    <div >
+  <!-- <video>
+    <source src="/assets/mp4/ico banner animation_1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> -->
+  <!-- <video width="600px" height="600px" controls="controls" [muted]="true" [autoplay]="true" loop 
+                src="/assets/mp4/ico banner animation_1.mp4">
+            </video> -->
+            
+            <div class="maintag" *ngIf="model" [@divtag] >
+                    <p style="
+                    position: absolute;
+                    top: 40%;
+                    left: 15%;
+                    color: #fff;
+                    font-size: 40px;
+                " *ngIf="textshow" [@showText]>Our  action  speaks  louder</p>
+             <img *ngIf="show" [@enterAnimation]  id="myImage1" width="600px" height="600px" style="margin-top: 100px;" src="/assets/gif/ico-banner-animation_4.gif" class="data">
+             
+           </div>
+           <div *ngIf="showsecondDiv" class="row rowDiv">
+               <div class="col-md-5">
+                <img *ngIf="showsecondDivImage" [@enterAnimation2]  id="myImage1" width="249px" height="418px" style="margin-top: 150px;
+                margin-left: 150px;" src="/assets/images/asset-1-1.png" class="data">
+              </div>
+                <div class="col-md-7 textDiv">
+                    <div class="sectionSec" *ngIf="pragraph" [@ParagraphText]>
+                        <h3>WHO WE ARE</h3>
+                        <p>A passionate team rooted in digital</p>
+                        <p>We are a bunch of designers & developers with a start-up DNA enabling digital transformation for Large enterprises & Startups. We consult, design and build the digital presence for your businesses by reducing system complexity and delivering relevance. We are a customer driven company and work in a collaborative environment.</p>
+                    </div>
+                </div>
+           </div>
+        
+  <!-- <img id="myImage" width="600px" height="600px" src="/assets/gif/ico banner animation.gif"> -->
+</div>
+</div>

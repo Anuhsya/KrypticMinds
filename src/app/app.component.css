@@ -1,0 +1,13 @@
+.textDiv{
+    padding-top: 250px;
+    color: #fff;
+}
+.rowDiv{
+    margin: 0px;
+    /* height: 100vh; */
+    overflow-y: hidden;
+}
+.sectionSec{
+    width: 70%;
+    text-align: justify;
+}
